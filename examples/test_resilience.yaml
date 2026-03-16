@@ -1,0 +1,111 @@
+cv:
+  name: Ana Isabella María de los Ángeles Victoria González-Pérez de la Santísima Trinidad 
+  headline: Very Long And Verbose Headline That Might Not Fit Well On A Single Line And Will Need To Wrap Or Do Something Crazy Oh And Did I Mention M.Sc. And B.S. IT?
+  phone: +1 800 555 1234
+  email: una.persona.con.un.correo.tremendamente.largo@un-dominio-bastante-extenso-para-entrar-en-conflictos.com
+  location: The Very Long And Complex City of Santiago, Chile, South America, Earth, Milky Way
+  social_networks:
+    - network: LinkedIn
+      username: username-that-is-way-too-long-and-might-break-the-grid-of-contact-info
+  sections:
+    IT:
+      - company: "Short"
+        position: "Dev"
+        date: 2024
+    M:
+      - company: Single letter section title
+        position: Tester
+        date: 2025
+    Extremely Long And Verbose Section Title With Many Words And Special Characters 🚀 ñ á &:
+      - company: No Date No Location Co.
+        position: Missing Fields Tester
+        highlights:
+          - This entry has no date and no location. It should not render empty grid elements or break the layout. 
+          - How does the system handle this?
+      - company: A Company with an Incredibly Long Name That Should Probably Take Up Multiple Lines But Instead Let's See If It Overflows The Margin Boundary Box
+        position: An Equally Tremendous and Long Winded Position Title That Explains Absolutely Everything About This Person's Job Role and Responsibilities in Micro Detail Without using any linebreaks
+        location: This Location Might Also Be Too Long And Push The Date Down Which Might Look Weird Or Crash Everything
+        date: 1900-01-01 - 2099-12-31
+        highlights:
+          - What happens when a highlight has a really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really long continuous line of text that never seems to end? 
+          - UnbreakableWordSupercalifragilisticexpialidociousSupercalifragilisticexpialidociousSupercalifragilisticexpialidociousSupercalifragilisticexpialidociousSupercalifragilisticexpialidocious 
+          - "Here is a URL: [https://www.example.com/a_very_long/path/with_underscores_and_symbols?id=123&token=abc_def](https://www.example.com/a_very_long/path/with_underscores_and_symbols?id=123&token=abc_def)"
+          - Point 1
+          - Point 2
+          - Point 3
+          - Point 4
+          - Point 5
+          - Point 6
+          - Point 7
+          - Point 8
+          - Point 9
+          - Point 10
+          - Point 11
+          - Point 12
+          - Point 13
+          - Point 14
+          - Point 15
+    Education:
+      - institution: Missing Area University
+        area: Some Area
+        location: Santiago, Chile
+        date: 2020-2024
+      - institution: Test Pagination 1
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 2
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 3
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 4
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 5
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 6
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 7
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 8
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 9
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 10
+        area: Tester
+        date: 2025
+      - institution: Test Pagination 11
+        area: Tester
+        date: 2025
+    Skills:
+      - label: Extremely long label for a skill category that is ridiculous
+        details: Python, C#
+design:
+  theme: ejemplo
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  header:
+    space_below_headline: 0.2cm
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.15cm
+  sections:
+    space_between_regular_entries: 0.6em
+    space_between_text_based_entries: 0.15em
+  entries:
+    short_second_row: false
+  typography:
+    font_size:
+      body: 9pt
+      name: 30pt
+      section_titles: 1.3em
+    line_spacing: 0.55em

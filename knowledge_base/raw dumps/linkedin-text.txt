@@ -1,0 +1,477 @@
+Martín Gil Oyarzún
+Añadir insignia de verificación
+
+AI Solutions Architect | Orquestación de Agentes & Diseño de Sistemas | Full-Stack Developer
+
+Área metropolitana de Valparaíso
+
+·
+
+Información de contacto
+
+
+Universidad Andrés Bello
+
+26 contactos
+
+
+Tengo interés en…
+Añadir sección
+
+Mejorar perfil
+
+Recursos
+Análisis
+Solo para ti
+
+27 vistas del perfil
+
+Descubre quién ha visto tu perfil.
+
+10 Impresiones de la publicación
+
+Mira quién está interactúando con tus publicaciones.
+
+Últimos 7 días
+
+3 apariciones en búsquedas
+
+Mira con qué frecuencia apareces en los resultados de búsqueda.
+
+Mostrar todo
+Acerca de
+Me apasiona diseñar y construir sistemas que resuelven problemas complejos combinando la robustez de la infraestructura Cloud y la potencia de la IA. Hoy, el buen código es una consecuencia lógica de un buen diseño.
+
+Mi enfoque técnico se centra en la etapa crítica de definición de arquitectura, delegando la implementación de código a modelos de IA bajo protocolos estrictos de supervisión y auditoría (metodología propia). Priorizo la orquestación inteligente de la IA para multiplicar mi capacidad de ejecución sin ceder el control del criterio técnico.
+
+Tengo experiencia práctica ejecutando modernizaciones en entornos "Brownfield" y transformando sistemas legados monolíticos hacia arquitecturas contenedorizadas. Paralelamente, desarrollo herramientas Open Source enfocadas en la soberanía de datos y la interoperabilidad.
+
+Busco roles que requieran visión de producto, rigor arquitectónico y capacidad para integrar flujos de IA Generativa en procesos de ingeniería crítica.
+
+
+Experiencia
+
+Logotipo de Universidad Alberto Hurtado
+Lead Developer & Encargado de Plataforma (basedeconciertos.uahurtado.cl)
+
+Universidad Alberto Hurtado · Jornada parcial
+
+mar. 2024 - actualidad · 2 años 1 mes
+
+Viña del Mar, Región de Valparaíso, Chile · En remoto
+
+Responsable de la arquitectura, mantenimiento y evolución tecnológica de la plataforma basedeconciertos.cl
+
+- Actualmente lidero la migración desde un entorno legacy hacia una arquitectura moderna basada en Docker y servicios desacoplados. Mi enfoque es en la eliminación de deuda técnica, respetando la arquitectura antigua siguiendo un patrón Strangler Fig. 
+
+- Encargado de coordinar e integrar módulos de Chatbot, OCR y Visualización Relacional en el sitio, en el marco de proyecto FONDECYT
+
+Stack: Python, Flask, Gunicorn, SQLAlchemy, MySQL 8, Alembic, Docker, Nginx, Jinja2, Babel, pandas.
+
+ IA generativa, Python y 12 aptitudes más
+
+Logotipo de Universidad Andrés Bello
+Investigador y Arquitecto de IA | Universidad Andrés Bello
+
+Universidad Andrés Bello · Jornada parcial
+
+jul. 2024 - ene. 2026 · 1 año 7 meses
+
+Viña del Mar, Región de Valparaíso, Chile · Híbrido
+
+Asignado a la rama "Compliance" dentro de un proyecto de flexibilidad académica, diseñando un sistema de Aseguramiento de Calidad (QA) basado en IA Generativa. 
+
+Diseñé una especificación JSON-LD que modela los 8 estándares y 44 subestándares de la rúbrica Quality Matters (QM). Orquesté 6 workflows de N8N con +12 agentes (CrewAI, Dual RAG) para procesar y validar Diseños Instruccionales. Trabajo en validación directa con la Supervisora de Calidad Académica de la UNAB. Co-autor de 2 papers enviados a conferencia (IFE 2026, EDUNINE 2026) como parte de esta investigación.
+
+Stack: Python, Flask, Vue.js, N8N, CrewAI, JSON-LD, Docker, Supabase.
+
+ IA generativa, Generación aumentada por recuperación (RAG) y 20 aptitudes más
+
+Logotipo de Sotos
+Ingeniero de DevOps en Práctica
+
+Sotos · Contrato de prácticas
+
+ene. 2024 - mar. 2024 · 3 meses
+
+Viña del Mar, Región de Valparaíso, Chile · Híbrido
+
+Como parte de mi primera práctica de la UNAB, participé en la migración completa de la infraestructura del sitio pre-lanzamiento, de AWS a Google Cloud Platform (GCP), y adquirí experiencia práctica en orquestación de contenedores con Kubernetes en un entorno de producción. Desarrollé el 100% del frontend para la landing page de pre-registro de usuarios usando React y Vercel (CI/CD). 
+
+Stack: Kubernetes, GCP, AWS, Docker, React, Vercel, Firebase.
+
+ Firebase, React Native y 11 aptitudes más
+
+Witral Framework (Open Source)
+
+dic. 2025 – Actualidad
+
+Proyecto realizado para resolver una necesidad propia, liberado en modalidad Open Source (licencia MIT).
+
+Repo: https://github.com/kirlts/witral
+Release: v1.0.0
+
+Framework de ingesta modular diseñado para la captura y estructuración de flujos de información no estructurada (captura mensajes de Whatsapp/Telegram/etc, los categoriza y guarda ordenados en Drive u otra plataforma).
+
+- Arquitectura: Sistema desacoplado construido en TypeScript y Node.js sobre Docker. Implementa un patrón de diseño basado en plugins que separa la capa de entrada (Ingestors) de la capa de persistencia (Storage).
+
+- Interoperabilidad: El release actual incluye un plugin para integración con WhatsApp (vía librería Baileys) y un sistema de almacenamiento agnóstico extensible a servicios Cloud (Google Drive API) y sistemas de archivos locales.
+
+- Enfoque: Prioriza la ejecución determinista y la privacidad del usuario, ofreciendo una alternativa self-hosted para la gestión de conocimiento personal, compatible nativamente con Obsidian y otros PKMs. 
+
+Aptitudes: TypeScript, Node.js y 3 aptitudes más
+
+Vista en miniatura de GitHub - kirlts/witral: Infrastructure for your mind. A plugin-based system to route data from Messaging Apps directly to Local/Cloud Storage.
+GitHub - kirlts/witral: Infrastructure for your mind. A plugin-based system to route data from Messaging Apps directly to Local/Cloud Storage.
+
+Marco de Trabajo Kairós (Filosofía de sinergia humano-IA)
+
+ago. 2025 – Actualidad
+
+
+Asociado con Universidad Andrés Bello
+
+Kairós es una filosofía de diseño que he desarrollado para abordar la "brecha de intención" en la colaboración humano-IA. En lugar de tratar a los LLMs como asistentes pasivos, este marco los transforma en socios estratégicos y dialécticos.
+
+Puede implementarse como una "Constitución como Código" (CaC) que fuerza al agente de IA a deliberar sobre la premisa del problema antes de ejecutar una solución. El objetivo es pasar de la simple generación de contenido a una sinergia medible y de alta calidad.
+
+El proyecto "Validador QM" (listado en mi experiencia en la UNAB) es una implementación directa de esta filosofía, donde los principios de Kairós se usan para alinear la capacidad generativa de la IA con los estrictos requisitos estructurales del aseguramiento de calidad académico (JSON-LD).
+
+Aptitudes: IA generativa, Software de código abierto y 3 aptitudes más
+
+Validador QM: Plataforma de Aseguramiento de Calidad con IA (Tesis de Grado)
+
+mar. 2025 – dic. 2025
+
+
+Asociado con Universidad Andrés Bello
+
+Este proyecto fue mi Tesis de Grado y la respuesta técnica a un cuello de botella real en la educación superior. 
+
+El diseño instruccional vive atrapado en formatos documentales estáticos (Word/Excel), opacos al análisis computacional, dificultando enormemente la validación automatizada de la calidad y diseño pedagógicos. 
+Los supervisores de calidad dedican semanas a revisar manualmente el alineamiento constructivo de cientos de cursos. En respuesta, diseñé y construí una plataforma tecnológica completa que moderniza el aseguramiento de la calidad, hoy en fase de adopción inicial en la UNAB. 
+
+Definí una especificación formal en JSON-LD que transforma diseños instruccionales no estructurados en modelos de datos computables, haciendo explícitas las relaciones pedagógicas. Esta misma especificación formal modela adecuadamente los estándares Quality Matters.
+
+ Desarrollé una arquitectura desacoplada utilizando N8N como motor de orquestación y bases de datos vectoriales (Supabase/pgvector) para habilitar análisis mediante agentes de IA Generativa (apoyado en RAG).
+
+El sistema resultante permite la validación automatizada de estándares Quality Matters (QM) y ofrece asistencia conversacional a los diseñadores. Desplegué la solución en una infraestructura productiva y hoy se utiliza en flujos reales de la UNAB.
+
+La especificación formal y la arquitectura fueron validadas académicamente a través de trabajos aceptados en conferencias internacionales (IFE 2026, EDUNINE 2025).
+
+Aptitudes: Ciclo de vida de desarrollo de software (SDLC), Infraestructura como código (IaC) y 3 aptitudes más
+
+Vista en miniatura de Validador QM - Sistematizando el Criterio Experto con IA
+Validador QM - Sistematizando el Criterio Experto con IA
+
+Landing page para el Validador QM, desarrollada por mí, para la ExpoSmart 2026. 
+
+Aptitudes
+
+
+
+Todo
+
+Conocimiento del sector
+
+Herramientas y tecnologías
+
+Otras aptitudes
+Desarrollo de IA Agentic
+
+Validador QM: Plataforma de Aseguramiento de Calidad con IA (Tesis de Grado)
+
+TypeScript
+
+Witral Framework (Open Source)
+
+Self Hosted
+
+Witral Framework (Open Source)
+
+Node.js
+
+Witral Framework (Open Source)
+
+Lanzamiento de Nuevo Producto
+
+Witral Framework (Open Source)
+
+Validador QM: Plataforma de Aseguramiento de Calidad con IA (Tesis de Grado)
+
+Software de código abierto
+
+Marco de Trabajo Kairós (Filosofía de sinergia humano-IA)
+
+Witral Framework (Open Source)
+
+
+Validada por 1 persona en los últimos seis meses
+
+Mostrar todos los detalles (4)
+Desarrollo de software
+
+Marco de Trabajo Kairós (Filosofía de sinergia humano-IA)
+
+Microsoft Visual Studio Code
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+Universidad Andrés Bello
+
+Kanban
+
+
+2 experiencias en Universidad Andrés Bello y una empresa más
+
+
+Universidad Andrés Bello
+
+Metodologías ágiles
+
+
+2 experiencias en Universidad Andrés Bello y una empresa más
+
+
+Universidad Andrés Bello
+
+
+Validada por 1 persona en los últimos seis meses
+
+Mostrar todos los detalles (4)
+GitHub
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+2 experiencias académicas en Universidad Andrés Bello y 1 institución educativa más
+
+
+Validada por 1 persona en los últimos seis meses
+
+Mostrar todos los detalles (4)
+Git
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+Universidad Andrés Bello
+
+Firebase
+
+
+Ingeniero de DevOps en Práctica en Sotos
+
+
+Universidad Andrés Bello
+
+PostgreSQL
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+
+2 experiencias académicas en Universidad Andrés Bello y 1 institución educativa más
+
+JavaScript
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+
+Universidad Andrés Bello
+
+Vue.js
+
+
+Investigador y Arquitecto de IA | Universidad Andrés Bello en Universidad Andrés Bello
+
+
+Validada por 1 persona en los últimos seis meses
+
+1 validación
+
+React Native
+
+
+Ingeniero de DevOps en Práctica en Sotos
+
+Infraestructura como código (IaC)
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+
+Universidad Andrés Bello
+
+Validador QM: Plataforma de Aseguramiento de Calidad con IA (Tesis de Grado)
+
+Ciclo de vida de desarrollo de software (SDLC)
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+Universidad Andrés Bello
+
+Validador QM: Plataforma de Aseguramiento de Calidad con IA (Tesis de Grado)
+
+Docker
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+Universidad Andrés Bello
+
+
+Validada por 1 persona en los últimos seis meses
+
+Mostrar todos los detalles (4)
+Amazon Web Services (AWS)
+
+
+Ingeniero de DevOps en Práctica en Sotos
+
+Google Cloud
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+Universidad Andrés Bello
+
+Kubernetes
+
+
+Ingeniero de DevOps en Práctica en Sotos
+
+SQL
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+Flask
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+
+Validada por 1 persona en los últimos seis meses
+
+1 validación
+
+Python
+
+
+3 experiencias en Universidad Alberto Hurtado y 2 empresas más
+
+
+2 experiencias académicas en Universidad Andrés Bello y 1 institución educativa más
+
+
+Validada por 1 persona en los últimos seis meses
+
+Mostrar todos los detalles (4)
+JSON Web Token (JWT)
+
+
+Investigador y Arquitecto de IA | Universidad Andrés Bello en Universidad Andrés Bello
+
+JSON
+
+
+Investigador y Arquitecto de IA | Universidad Andrés Bello en Universidad Andrés Bello
+
+
+Universidad Andrés Bello
+
+Arquitectura de soluciones
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+Marco de Trabajo Kairós (Filosofía de sinergia humano-IA)
+
+Validador QM: Plataforma de Aseguramiento de Calidad con IA (Tesis de Grado)
+
+Generación aumentada por recuperación (RAG)
+
+
+Investigador y Arquitecto de IA | Universidad Andrés Bello en Universidad Andrés Bello
+
+
+Universidad Andrés Bello
+
+IA generativa para la gestión
+
+
+Investigador y Arquitecto de IA | Universidad Andrés Bello en Universidad Andrés Bello
+
+Agentes inteligentes
+
+
+Investigador y Arquitecto de IA | Universidad Andrés Bello en Universidad Andrés Bello
+
+
+Universidad Andrés Bello
+
+Marco de Trabajo Kairós (Filosofía de sinergia humano-IA)
+
+IA generativa
+
+
+2 experiencias en Universidad Alberto Hurtado y una empresa más
+
+
+Universidad Andrés Bello
+
+Marco de Trabajo Kairós (Filosofía de sinergia humano-IA)
+
+Mostrar todos los detalles (5)
+Otros perfiles vistos por tus visitantes
+Solo para ti
+
+
+Alguien en Neosoltec
+
+
+Ver
+
+Alguien en Universidad Andrés Bello
+
+
+Ver
+
+Alguien en Universidad Andrés Bello
+
+
+Ver
+
+Investigador postdoctoral en Universidad de Santiago de Chile
+
+
+Ver
+
+
+Publicaciones
+A System for Evaluating Compliance with Instructional Design Standards: A Formal Specification Approach Using Semantically-Rich Models
+
+EDUNINE 2026 (X IEEE World Engineering Education Conference) · 20 oct. 2025
+
+Este paper (enviado a revisión) describe la arquitectura del "Validador QM", el sistema que aplica la especificación formal (mencionada en la publicación de IFE) para evaluar el cumplimiento del diseño instruccional. Detalla cómo la orquestación de agentes de IA y técnicas de Dual RAG se utilizan para analizar los Diseños Instruccionales (en formato JSON-LD) contra la rúbrica QM, proveyendo un método escalable para el aseguramiento de la calidad académica en la Universidad Andrés Bello.
+
+A Formal Specification for Instructional Design: Enabling Flexibility and Automated Quality Assurance through Semantically-Rich Models
+
+IFE Conference 2026: Insights for the Future of Education · 16 oct. 2025
+
+Este paper (aceptado) presenta el diseño de una especificación formal (JSON-LD) creada para modelar semánticamente los 8 estándares generales y los 44 subestándares específicos de la rúbrica internacional Quality Matters (QM). Esta especificación es la base que permite a los sistemas de IA, como el "Validador QM", procesar, analizar y validar Diseños Instruccionales de forma automatizada, cerrando la brecha entre los estándares de calidad pedagógica y la verificación técnica.
+
+Idiomas
+Inglés
+
+Competencia bilingüe o nativa

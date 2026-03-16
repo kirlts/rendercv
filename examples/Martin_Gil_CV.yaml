@@ -1,0 +1,94 @@
+cv:
+  name: Martin Gil
+  headline: Ingeniero de Software
+  phone: +56 9 9417 2921
+  email: martin.gil.o@gmail.com
+  social_networks:
+    - network: LinkedIn
+      username: martin-gil-o
+    - network: GitHub
+      username: kirlts
+  sections:
+    Experiencia:
+      - company: Universidad Alberto Hurtado
+        position: Lead Developer
+        location: Viña del Mar, Chile (Remoto)
+        date: Mar. 2024 - Presente
+        highlights:
+          - Liderazgo de la arquitectura y modernización tecnológica de una plataforma web legada, migrando un entorno monolítico hacia una infraestructura de microservicios en Docker.
+          - Implementación de estrategias de refactorización progresiva (Patrón Strangler Fig) para eliminar deuda técnica y optimizar recursos con "Zero-Downtime" en producción.
+          - Desarrollo de un motor de búsqueda en tiempo real utilizando Redis en memoria y algoritmos de validación (RapidFuzz), asegurando la integridad de las entidades catalogadas.
+          - Diseño de endpoints API seguros (autenticación M2M) para la ingesta asíncrona masiva de eventos digitalizados procesados por pipelines OCR (Proyecto FONDECYT).
+      - company: Universidad Andrés Bello
+        position: Arquitecto de Soluciones IA
+        location: Viña del Mar, Chile
+        date: Ene. 2025 - Dic. 2025
+        highlights:
+          - Arquitectura y desarrollo Full-Stack (Vue.js, Python, PostgreSQL) de una plataforma de Aseguramiento de Calidad Académica impulsada por IA Generativa.
+          - Orquestación de flujos de trabajo (6 workflows) en N8N con múltiples agentes independientes, integrando bases de datos vectoriales (Supabase/pgvector) y técnicas avanzadas de Dual RAG.
+          - Reducción drástica en tiempos de iteración manual de diseño instruccional, logrando publicación de los modelos arquitectónicos en conferencias internacionales IEEE.
+      - company: Sotos
+        position: Ingeniero DevOps en Práctica
+        location: Viña del Mar, Chile
+        date: Ene. 2024 - Mar. 2024
+        highlights:
+          - Ejecución y planificación de la migración completa de infraestructura pre-lanzamiento SaaS desde Amazon Web Services (AWS) hacia Google Cloud Platform (GCP).
+          - Orquestación de contenedores y despliegues estables utilizando Kubernetes en entorno de producción.
+          - Desarrollo íntegro de interfaces Frontend (Landing pages y pre-registro) utilizando React, React Native y pipelines CI/CD automatizados en Vercel.
+    Proyectos Destacados:
+      - company: WIRIN Framework
+        position: Creador & Desarrollador Full-Stack
+        date: Ene. 2026 - Presente
+        highlights:
+          - Diseño de un entorno CAD profesional y colaborativo basado en el paradigma "Local-First" para modelado topológico experimental de sistemas multi-agentes (Node-based UI).
+          - Desarrollo de un motor vectorial optimizado de alto rendimiento utilizando React Flow, sosteniendo 120fps en compiladores nativos del navegador.
+          - Integración de persistencia descentralizada P2P en memoria integrando Yjs e IndexedDB, garantizando soberanía de datos y latencia cero.
+      - company: Witral (Open Source)
+        position: Creador & Mantenedor
+        date: Dic. 2025 - Presente
+        highlights:
+          - Desarrollo de un Framework Open Source (MIT) modular para la captura y orquestación de flujos de conocimiento no estructurado (Node.js/TypeScript).
+          - Arquitectura desacoplada en Docker que abstrae capas de *Ingestión* y *Almacenamiento*, habilitando infraestructura Self-Hosted en Oracle Cloud.
+    Habilidades:
+      - label: Lenguajes
+        details: Python, TypeScript, JavaScript, SQL, HTML/CSS.
+      - label: Infraestructura & Cloud
+        details: Docker, Kubernetes, Google Cloud (GCP), AWS, CI/CD (GitHub Actions), Nginx, Linux.
+      - label: Frameworks Full-Stack
+        details: React, Vue.js, Vite, React Native, Node.js, Flask, SQLAlchemy.
+      - label: Datos & IA
+        details: RAG, PostgreSQL, Redis, Vector Databases (pgvector), N8N, Prompting dinámico.
+    Educación:
+      - institution: Universidad Andrés Bello
+        area: Ingeniería en Computación e Informática
+        location: Viña del Mar, Chile
+        date: Mar. 2023 - Dic. 2025
+        summary: Graduado. Tesis de impacto real (Validador QM) desplegada en producción.
+
+design:
+  theme: ejemplo
+  page:
+    top_margin: 0.55in
+    bottom_margin: 0.55in
+    left_margin: 0.55in
+    right_margin: 0.55in
+  header:
+    space_below_name: 0.3cm
+    space_below_headline: 0.2cm
+    space_below_connections: 0.3cm
+    connections:
+      phone_number_format: international
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.15cm
+  sections:
+    space_between_regular_entries: 0.4cm
+    space_between_text_based_entries: 0.15cm
+  entries:
+    short_second_row: false
+  typography:
+    font_size:
+      body: 9pt
+      name: 30pt
+      section_titles: 1.3em
+    line_spacing: 0.55em

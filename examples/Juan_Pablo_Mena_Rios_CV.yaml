@@ -1,0 +1,106 @@
+cv:
+  name: Juan Pablo Mena Ríos
+  headline: Electrical Engineer, MSc
+  phone: +56 9 96490389
+  email: jpmena6@gmail.com
+  social_networks:
+    - network: LinkedIn
+      username: jpmenar
+  sections:
+    Experience:
+      - company: Engie Impact
+        position: Software AI
+        location: Santiago, Chile
+        date: Mar. 2024 - Now
+        highlights:
+          - Monitor and manage a B2B cloud automation platform with +500 US and European customers that offers outsourcing service for massive utility bills payment. Manage +300 automation scripts for different utility management companies in US and Europe.
+          - Maintain and optimize ETL models for the platform pipelines.
+          - Participate in team discussions to help define the product roadmap. Perform peer code reviews working full remote with a US located team.
+      - company: Sisua Digital
+        position: Solution Consultant/Infrastructure Engineer
+        location: Santiago, Chile
+        date: Nov. 2022 - Mar. 2024
+        highlights:
+          - Implemented and managed automation oriented web applications on Azure for customers in Finland, Chile and Vietnam.
+          - Led digital transformation projects focused on data analytics and operational efficiency, managing long-term initiatives (6+ months) in close collaboration with clients.
+          - Reported to the company CTO in Helsinki.
+          - "Part of the *Extended Global Management Team*, an executive team that supports the company's strategic decision-making at a global level."
+          - "Part of the innovation team *SisuaLabs*, which researches and analyzes new tools for use in automations."
+          - Led automation developers teams and perform code review.
+      - company: Sisua Digital
+        position: Solution Consultant
+        location: Santiago, Chile
+        date: Apr. 2021 - Nov. 2022
+        highlights:
+          - Designed, developed and implemented automation and digital transformation solutions (ETL, Data lakes, Web scraping, API integrations, Data analysis) for national and international clients of different industries.
+          - Close relationship with several number of clients, identifying business opportunities and offering new solutions to fulfill their needs.
+      - company: Procesadora del Maipo Frutexsa
+        position: External Consultant
+        location: Buin, Chile
+        date: Dec. 2017 - Dec. 2019
+        highlights:
+          - Designed and developed a real-time automatic dried prunes weight measurement device based on image processing on a real industrial line.
+          - Developed an industrial wireless networked control system with real time data connected to industrial PLC.
+    Skills:
+      - label: Programming
+        details: "Python, C#, Golang, JavaScript, VB.NET, Matlab, LaTex."
+      - label: Languages
+        details: Native Spanish, Advanced English, Basic Mandarin.
+      - label: Experience with
+        details: Docker, Azure, Linux, Django, SQL, MongoDB, Kubernetes, Power BI.
+      - label: Project management
+        details: Agile (Jira Scrum), Waterfall.
+    Education:
+      - institution: Pontificia Universidad Católica de Chile
+        area: Master of Science in Engineering
+        location: Santiago, Chile
+        date: Aug. 2019 - Mar. 2021
+        summary: "Thesis: Age of Information in IoT-based Wireless Networked Control Systems. Won MSc best thesis in Electrical Engineering of 2021 award."
+      - institution: Pontificia Universidad Católica de Chile
+        area: Bachelor of Electrical Engineering
+        location: Santiago, Chile
+        date: Mar. 2014 - Dec. 2019
+      - institution: University of Leeds
+        area: Exchange Program
+        location: Leeds, UK
+        date: Sept. 2018 - Jan. 2019
+    Extracurricular Activity:
+      - company: Pontificia Universidad Católica de Chile
+        position: Teaching Assistant
+        location: Santiago, Chile
+        highlights:
+          - Static and Dynamic systems Lab, Thermodynamics Lab, Electricity and Magnetism Lab.
+      - company: Reforzamientos Belén UC
+        position: Coordinator and Teacher
+        location: Santiago, Chile
+        date: 2015-2017
+        highlights:
+          - Weekly math and Spanish lessons were held for high school vulnerable students from different schools of Santiago.
+          - In charge of managing the budget assigned by the university.
+design:
+  theme: ejemplo
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  header:
+    space_below_name: 0.3cm
+    space_below_headline: 0.2cm
+    space_below_connections: 0.3cm
+    connections:
+      phone_number_format: international
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.15cm
+  sections:
+    space_between_regular_entries: 0.6em
+    space_between_text_based_entries: 0.15em
+  entries:
+    short_second_row: false
+  typography:
+    font_size:
+      body: 9pt
+      name: 30pt
+      section_titles: 1.3em
+    line_spacing: 0.55em
