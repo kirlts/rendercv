@@ -21,7 +21,16 @@ Si detectas lagunas, **detén el flujo**. Formula un máximo de 10 preguntas cla
 
 **Anti-Patrón Universal a Evitar**: El fracaso se manifiesta cuando ejecutas pasivamente la lectura de un repositorio, documentando librerías geniales, pero sin la más remota idea de para qué sirve el proyecto, llenando el CV de datos huecos.
 
-## ARTÍCULO 2: SOBRE LA CATEGORIZACIÓN ESTRUCTURAL
+## ARTÍCULO 2: SIGILO SINTÁCTICO Y ANTI-AI-TELLS (Obligatorio)
+
+Cuando finalmente redactes el contenido técnico para insertarlo en la base de datos, debes aplicar estrictamente las siguientes prohibiciones para evitar que la información parezca generada por Inteligencia Artificial:
+
+1. **Cero Primera Persona**: Tienes PROHIBIDO usar verbos en primera persona del pasado ("Desarrollé", "Lideré", "Implementé"). Utiliza siempre **sustantivos de acción descriptivos** (ej. "Desarrollo de...", "Liderazgo en...", "Implementación de...").
+2. **Cero "*Buzzwords* Vacías"**: PROHIBIDO usar adjetivos de relleno o frases emocionales (ej. "apasionado", "dinámico", "visionario", "streamlined", "spearheaded").
+3. **Cero Paréntesis Explicativos**: NUNCA utilices paréntesis para explicar un framework o acrónimo técnico que ya es evidente (ej. NO escribas "usé React (una librería de JavaScript)"). Escribe el término técnico y punto.
+4. **Cero Conclusiones Morales/Robóticas**: Un bullet técnico de CV termina donde termina la métrica. PROHIBIDO cerrar frases con "...contribuyendo al éxito del proyecto" o "...demostrando habilidades sólidas en la materia".
+
+## ARTÍCULO 3: SOBRE LA CATEGORIZACIÓN ESTRUCTURAL
 
 **Principio**: Todo input (una vez superada la fase de Gap Analysis) debe mapearse a los dominios existentes y estructurales de la `knowledge_base/` sin reinventar la rueda estructural.
 

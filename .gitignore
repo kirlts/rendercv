@@ -167,6 +167,8 @@ cython_debug/
 
 # RenderCV output
 rendercv_output/
+CVs/
+ofertas/
 
 # Include reference files
 !/tests/testdata/**/*.pdf

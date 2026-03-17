@@ -1,0 +1,57 @@
+cv:
+  name: Martín Gil Oyarzún
+  headline: AI Solutions Architect | Desarrollador Full-Stack
+  phone: "+569 9417 2921"
+  email: martin.gil.o@gmail.com
+  location: Viña del Mar, Chile
+  social_networks:
+    - network: LinkedIn
+      username: martin-gil-o
+    - network: GitHub
+      username: kirlts
+  sections:
+    # Las siguientes secciones serán rellenadas dinámicamente por la IA
+    # basándose en la Knowledge Base y los requerimientos de la oferta.
+    Experience: []
+    Education:
+      - institution: Universidad Andrés Bello
+        area: Ingeniería en Computación e Informática
+        location: Viña del Mar, Chile
+        date: 2023 - 2025
+        highlights:
+          - "Tesis de Grado: Validador QM (Plataforma de Aseguramiento de Calidad con IA)"
+      - institution: Universidad Diego Portales
+        area: Ingeniería Civil en Telecomunicaciones e Informática
+        location: Santiago, Chile
+        date: 2020 - 2022
+        highlights:
+          - "Status: Convalidado en UNAB"
+    Projects: []
+    Skills: []
+design:
+  theme: ejemplo
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  header:
+    space_below_name: 0.3cm
+    space_below_headline: 0.2cm
+    space_below_connections: 0.3cm
+    connections:
+      phone_number_format: international
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.15cm
+  sections:
+    space_between_regular_entries: 0.6em
+    space_between_text_based_entries: 0.15em
+  entries:
+    short_second_row: false
+  typography:
+    font_size:
+      body: 9pt
+      name: 30pt
+      section_titles: 1.3em
+    line_spacing: 0.55em
