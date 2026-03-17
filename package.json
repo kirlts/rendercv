@@ -1,0 +1,14 @@
+{
+  "name": "rendercv-web",
+  "version": "1.0.0",
+  "description": "Interactive Web UI for RenderCV",
+  "scripts": {
+    "postinstall": "cd web && npm install",
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "cd web && npm run dev",
+    "dev:api": "uv run uvicorn web.api.main:app --reload --port 8000"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

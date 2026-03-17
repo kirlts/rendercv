@@ -157,3 +157,11 @@ rendercv render "John_Doe_CV.yaml"
 ```
 
 For more details, see the [user guide](https://docs.rendercv.com/user_guide/).
+
+## Live Web Preview
+
+RenderCV now includes an interactive web interface powered by Monaco Editor and PDF.js. This allows you to edit your YAML configuration on the left and see the generated PDF update in real-time on the right.
+
+To launch the live preview server, install dependencies with `npm install` and start the script with `npm` `run` `dev`.
+
+This spins up both the Vite frontend and the FastAPI backend simultaneously. Open [http://localhost:5173](http://localhost:5173) in your browser to start editing!
