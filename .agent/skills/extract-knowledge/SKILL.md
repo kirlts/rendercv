@@ -39,9 +39,9 @@ Dependiendo de lo que el usuario provea y tras sanear sus respuestas en el Gap A
 2. Estructura el impacto de sus acciones (con data cualitativa del Gap Analysis).
 3. Mantén la jerga técnica nativa intacta.
 
-## 2. Inserción Modular (Formateo)
+## 3. Inserción Modular y Formateo Sintáctico
 
-Debes escribir en el archivo markdown correspondiente (`knowledge_base/{dominio}.md`) bajo la sección de nivel 2 `## [Título]`. **NO utilices campos rígidos como "Source" o "Date Added".** Sigue esta estructura flexible:
+Debes escribir en el archivo markdown correspondiente (`knowledge_base/{dominio}.md`) bajo la sección de nivel 2 `## [Título]`. **NO utilices campos rígidos como "Source" o "Date Added".** Sigue la estructura flexible a continuación, aplicando estrictamente la regla de **Sigilo Sintáctico (Cero AI-Tells)** estipulada en `01-knowledge-base-extraction.md` (sin primera persona, sin muletillas, sin paréntesis tontos):
 
 ### Para `experience.md` o `extracurricular.md`
 

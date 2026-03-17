@@ -4,7 +4,7 @@
 
 - **Institution**: Universidad Andrés Bello - Viña del Mar
 - **Timeframe**: 2023 - 2025
-- **Status**: Egresado
+- **Estado**: Egresado
 - **Details**:
   - Tesis de Grado: Validador QM (Plataforma de Aseguramiento de Calidad con IA)
 
@@ -12,4 +12,4 @@
 
 - **Institution**: Universidad Diego Portales - Santiago de Chile
 - **Timeframe**: 2020 - 2022
-- **Status**: Convalidado en UNAB
+- **Estado**: Convalidado en UNAB
