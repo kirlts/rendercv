@@ -1,15 +1,16 @@
 cv:
   name: Juan Pablo Mena Ríos
   headline: Electrical Engineer, MSc
-  phone: +56 9 96490389
-  email: jpmena6@gmail.com
+  location: Providencia, Chile
+  phone: +56 9 8450 7149
+  email: jp.menarios@gmail.com
   social_networks:
     - network: LinkedIn
-      username: jpmenar
+      username: jpmenarios
   sections:
     Experience:
       - company: Engie Impact
-        position: Software AI
+        position: Software Engineer
         location: Santiago, Chile
         date: Mar. 2024 - Now
         highlights:
@@ -78,29 +79,7 @@ cv:
           - Weekly math and Spanish lessons were held for high school vulnerable students from different schools of Santiago.
           - In charge of managing the budget assigned by the university.
 design:
-  theme: ejemplo
-  page:
-    top_margin: 0.6in
-    bottom_margin: 0.6in
-    left_margin: 0.6in
-    right_margin: 0.6in
+  theme: jpmr
   header:
-    space_below_name: 0.3cm
-    space_below_headline: 0.2cm
-    space_below_connections: 0.3cm
     connections:
       phone_number_format: international
-  section_titles:
-    space_above: 0.3cm
-    space_below: 0.15cm
-  sections:
-    space_between_regular_entries: 0.6em
-    space_between_text_based_entries: 0.15em
-  entries:
-    short_second_row: false
-  typography:
-    font_size:
-      body: 9pt
-      name: 30pt
-      section_titles: 1.3em
-    line_spacing: 0.55em

@@ -6,4 +6,67 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  color-scheme: dark;
 }
+
+/* PDF pages: render at fixed 800px, CSS-scale to fill container */
+.pdf-page-scaled canvas,
+.pdf-page-scaled .react-pdf__Page__textContent,
+.pdf-page-scaled .react-pdf__Page__annotations {
+  width: 100% !important;
+  height: auto !important;
+}
+.pdf-page-scaled {
+  background: white;
+}
+
+/* Custom range slider styling — consistent dark track for all sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 20px;
+}
+
+/* Track (WebKit/Blink) */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #404040;
+  height: 5px;
+  border-radius: 3px;
+}
+
+/* Thumb (WebKit/Blink) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-top: -5.5px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Track (Firefox) */
+input[type="range"]::-moz-range-track {
+  background: #404040;
+  height: 5px;
+  border-radius: 3px;
+}
+
+/* Thumb (Firefox) */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: currentColor;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Color per slider type — thumb inherits from `color` */
+input[type="range"].slider-size { color: #fc5c45; }
+input[type="range"].slider-weight { color: #8b5cf6; }
+input[type="range"].slider-spacing { color: #14b8a6; }

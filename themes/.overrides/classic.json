@@ -1,0 +1,21 @@
+{
+  "font_size": {
+    "body": "8pt",
+    "name": "23pt",
+    "headline": "10pt",
+    "connections": "10pt",
+    "section_titles": "1.4em",
+    "entry_title": "10pt",
+    "entry_detail": "10pt"
+  },
+  "font_weight": {
+    "body": 400,
+    "name": 350,
+    "headline": 400,
+    "connections": 400,
+    "section_titles": 700,
+    "entry_title": 700,
+    "entry_detail": 400
+  },
+  "font_family": "Inter"
+}

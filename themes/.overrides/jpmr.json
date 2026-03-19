@@ -1,0 +1,30 @@
+{
+  "font_size": {
+    "body": "7pt",
+    "name": "25pt",
+    "headline": "9pt",
+    "connections": "7pt",
+    "section_titles": "10pt",
+    "entry_title": "8pt",
+    "entry_detail": "7pt"
+  },
+  "font_weight": {
+    "body": 250,
+    "name": 500,
+    "headline": 600,
+    "connections": 550,
+    "section_titles": 700,
+    "entry_title": 600,
+    "entry_detail": 300
+  },
+  "font_family": "Inter",
+  "spacing": {
+    "body": "0.2cm",
+    "name": "0.3cm",
+    "headline": "0.1cm",
+    "connections": "0.15cm",
+    "section_titles": "0.3cm",
+    "entry_title": "0.2cm",
+    "entry_detail": "0.15cm"
+  }
+}

@@ -54,6 +54,12 @@ Debes escribir en el archivo markdown correspondiente (`knowledge_base/{dominio}
 - **Details**:
   - [Bullet exhaustivo y específico del problema resuelto]
   - [Bullet exhaustivo y específico de la arquitectura o diseño técnico]
+- **Condensed Bullets**:
+  - [Bullet CV-ready en español, nominalización: "Implementación de...", "Diseño de..."]
+  - [Máximo 3 bullets, secos y técnicos, ~20 palabras cada uno]
+- **Condensed Bullets EN**:
+  - [CV-ready bullet in English, past-tense action verbs: "Implemented...", "Designed..."]
+  - [Maximum 3 bullets, dry and technical, ~20 words each]
 ```
 
 ### Para `skills.md`

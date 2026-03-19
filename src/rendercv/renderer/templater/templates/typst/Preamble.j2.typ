@@ -84,3 +84,5 @@
     day: {{ settings._resolved_current_date.day }},
   ),
 )
+
+#set text(hyphenate: false)

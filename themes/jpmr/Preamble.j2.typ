@@ -2,6 +2,12 @@
 #import "@preview/rendercv:0.2.0": *
 
 // Apply the rendercv template with custom configuration
+#let custom_subtitle(text_string) = {
+  if text_string != "" and text_string != none {
+    text(fill: rgb("555555"), tracking: 0.3pt, weight: {{ design.typography.font_weight.entry_detail }}, size: {{ design.typography.font_size.entry_detail }})[#smallcaps(text_string)]
+  }
+}
+
 #show: rendercv.with(
   name: "{{ cv._plain_name }}",
   title: "{{ settings.pdf_title }}",
@@ -85,8 +91,13 @@
   ),
 )
 
-#let custom-subtitle(text_string) = {
-  if text_string != "" and text_string != none {
-    text(fill: rgb("555555"), tracking: 0.3pt, size: 8pt)[#smallcaps(text_string)]
-  }
-}
+// Per-field font weight overrides
+{% if design.typography.font_weight.body != 400 %}
+#set text(weight: {{ design.typography.font_weight.body }})
+{% endif %}
+// Entry titles (company/project names) use *strong* markup from main_column templates
+// Override #show strong to use entry_title weight+size instead of inheriting from body
+#show strong: it => text(weight: {{ design.typography.font_weight.entry_title }}, size: {{ design.typography.font_size.entry_title }})[#it.body]
+// Ensure text is justified without hyphenation
+#set par(justify: true)
+#set text(hyphenate: false)

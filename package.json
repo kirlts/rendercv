@@ -4,9 +4,9 @@
   "description": "Interactive Web UI for RenderCV",
   "scripts": {
     "postinstall": "cd web && npm install",
-    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev": "concurrently -k -c \"cyan,magenta\" -n \"vite,api\" \"npm run dev:web\" \"npm run dev:api\"",
     "dev:web": "cd web && npm run dev",
-    "dev:api": "uv run uvicorn web.api.main:app --reload --port 8000"
+    "dev:api": "uv run uvicorn web.api.main:app --host 0.0.0.0 --port 8000 --reload"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

@@ -10,8 +10,8 @@
       columns: (auto, 1fr),
       align: (left, horizon),
       column-gutter: 0.3em,
-      text(size: {{ design.typography.font_size.section_titles }}, weight: "bold", fill: {{ design.colors.section_titles.as_rgb() }})[#first-three] + text(size: {{ design.typography.font_size.section_titles }}, weight: "bold", fill: rgb("333333"))[#rest],
-      box(width: 1fr, move(dy: 0.3em, line(length: 100%, stroke: {{ design.section_titles.line_thickness }} + rgb("cccccc"))))
+      text(size: {{ design.typography.font_size.section_titles }}, weight: {{ design.typography.font_weight.section_titles }}, fill: {{ design.colors.section_titles.as_rgb() }})[#first-three] + text(size: {{ design.typography.font_size.section_titles }}, weight: {{ design.typography.font_weight.section_titles }}, fill: rgb("333333"))[#rest],
+      box(width: 1fr, move(dy: 0.15em, line(length: 100%, stroke: {{ design.section_titles.line_thickness }} + black)))
     )
   ]
 )

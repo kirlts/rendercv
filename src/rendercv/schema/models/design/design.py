@@ -69,13 +69,22 @@ def validate_design(design: Any, info: pydantic.ValidationInfo) -> Any:
             },
         )
 
-    custom_theme_folder = relative_to / theme_name
+    # Resolve workspace root to support global themes directory instead of forcing localized themes
+    workspace_dir = pathlib.Path("/home/kirlts/rendercv")
+    global_theme_folder = workspace_dir / "themes" / theme_name
+    local_theme_folder = relative_to / theme_name
+    
+    if global_theme_folder.exists():
+        custom_theme_folder = global_theme_folder
+    else:
+        custom_theme_folder = local_theme_folder
+
     # Check if the custom theme folder exists:
     if not custom_theme_folder.exists():
         raise pydantic_core.PydanticCustomError(
             CustomPydanticErrorTypes.other.value,
             "The custom theme folder `{custom_theme_folder}` does not exist. It should"
-            " be in the same directory as the input file.",
+            " be in the global `themes/` directory or in the same directory as the input file.",
             {"custom_theme_folder": custom_theme_folder.absolute()},
         )
     # Check if at least there is one *.j2.typ file in the custom theme folder:

@@ -455,11 +455,11 @@ class Sections(BaseModelWithoutExtraKeys):
         ),
     )
     space_between_text_based_entries: TypstDimension = pydantic.Field(
-        default="0.3em",
+        default="0.6em",
         description=(
             "Vertical space between text-based entries. "
             + length_common_description
-            + " The default value is `0.3em`."
+            + " The default value is `0.6em`."
         ),
     )
     # page_break_before: list[str] = pydantic.Field(

@@ -37,6 +37,8 @@ def get_jinja2_environment(
                 (  # To allow users to override the templates:
                     input_file_path.parent if input_file_path else pathlib.Path.cwd()
                 ),
+                pathlib.Path.cwd() / "themes",
+                pathlib.Path.cwd(),
                 templates_directory,
             ]
         ),

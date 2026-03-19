@@ -30,20 +30,20 @@ class Page(BaseModelWithoutExtraKeys):
         ),
     )
     top_margin: TypstDimension = pydantic.Field(
-        default="0.7in",
-        description=length_common_description + " The default value is `0.7in`.",
+        default="0.6in",
+        description=length_common_description + " The default value is `0.6in`.",
     )
     bottom_margin: TypstDimension = pydantic.Field(
-        default="0.7in",
-        description=length_common_description + " The default value is `0.7in`.",
+        default="0.6in",
+        description=length_common_description + " The default value is `0.6in`.",
     )
     left_margin: TypstDimension = pydantic.Field(
-        default="0.7in",
-        description=length_common_description + " The default value is `0.7in`.",
+        default="0.6in",
+        description=length_common_description + " The default value is `0.6in`.",
     )
     right_margin: TypstDimension = pydantic.Field(
-        default="0.7in",
-        description=length_common_description + " The default value is `0.7in`.",
+        default="0.6in",
+        description=length_common_description + " The default value is `0.6in`.",
     )
     show_footer: bool = pydantic.Field(
         default=True,
@@ -70,9 +70,9 @@ color_common_examples = ["Black", "7fffd4", "rgb(0,79,144)", "hsl(270, 60%, 70%)
 
 class Colors(BaseModelWithoutExtraKeys):
     body: Color = pydantic.Field(
-        default=Color("rgb(0, 0, 0)"),
+        default=Color("rgb(33, 33, 33)"),
         description=(
-            color_common_description + " The default value is `rgb(0, 0, 0)`."
+            color_common_description + " The default value is `rgb(33, 33, 33)`."
         ),
         examples=color_common_examples,
     )
@@ -89,9 +89,9 @@ class Colors(BaseModelWithoutExtraKeys):
         examples=color_common_examples,
     )
     connections: Color = pydantic.Field(
-        default=Color("rgb(0, 0, 0)"),
+        default=Color("rgb(33, 33, 33)"),
         description=color_common_description
-        + " The default value is `rgb(0, 0, 0)`.",
+        + " The default value is `rgb(33, 33, 33)`.",
         examples=color_common_examples,
     )
     section_titles: Color = pydantic.Field(
@@ -155,24 +155,32 @@ class FontFamily(BaseModelWithoutExtraKeys):
 
 class FontSize(BaseModelWithoutExtraKeys):
     body: TypstDimension = pydantic.Field(
-        default="10pt",
-        description="The font size for body text. The default value is `10pt`.",
+        default="9pt",
+        description="The font size for body text. The default value is `9pt`.",
     )
     name: TypstDimension = pydantic.Field(
-        default="30pt",
-        description="The font size for the name. The default value is `30pt`.",
+        default="28pt",
+        description="The font size for the name. The default value is `28pt`.",
     )
     headline: TypstDimension = pydantic.Field(
-        default="10pt",
-        description="The font size for the headline. The default value is `10pt`.",
+        default="8pt",
+        description="The font size for the headline. The default value is `8pt`.",
     )
     connections: TypstDimension = pydantic.Field(
-        default="10pt",
-        description="The font size for connections. The default value is `10pt`.",
+        default="8pt",
+        description="The font size for connections. The default value is `8pt`.",
     )
     section_titles: TypstDimension = pydantic.Field(
-        default="1.4em",
-        description="The font size for section titles. The default value is `1.4em`.",
+        default="12pt",
+        description="The font size for section titles. The default value is `12pt`.",
+    )
+    entry_title: TypstDimension = pydantic.Field(
+        default="9pt",
+        description="The font size for entry titles (company, project name). The default value is `9pt`.",
+    )
+    entry_detail: TypstDimension = pydantic.Field(
+        default="9pt",
+        description="The font size for entry details (position, project detail). The default value is `9pt`.",
     )
 
 
@@ -223,12 +231,51 @@ class Bold(BaseModelWithoutExtraKeys):
     )
 
 
+class FontWeight(BaseModelWithoutExtraKeys):
+    body: int = pydantic.Field(
+        default=400, ge=100, le=900,
+        description="Font weight for body text. The default value is `400`.",
+    )
+    name: int = pydantic.Field(
+        default=700, ge=100, le=900,
+        description="Font weight for the name. The default value is `700`.",
+    )
+    headline: int = pydantic.Field(
+        default=400, ge=100, le=900,
+        description="Font weight for the headline. The default value is `400`.",
+    )
+    connections: int = pydantic.Field(
+        default=400, ge=100, le=900,
+        description="Font weight for connections. The default value is `400`.",
+    )
+    section_titles: int = pydantic.Field(
+        default=700, ge=100, le=900,
+        description="Font weight for section titles. The default value is `700`.",
+    )
+    entry_title: int = pydantic.Field(
+        default=700, ge=100, le=900,
+        description="Font weight for entry titles (company, project name). The default value is `700`.",
+    )
+    entry_detail: int = pydantic.Field(
+        default=400, ge=100, le=900,
+        description="Font weight for entry details (position, project detail). The default value is `400`.",
+    )
+
+
 class Typography(BaseModelWithoutExtraKeys):
     line_spacing: TypstDimension = pydantic.Field(
         default="0.6em",
         description=(
             "Space between lines of text. Larger values create more vertical space. The"
             " default value is `0.6em`."
+        ),
+    )
+    font_weight: FontWeight | int = pydantic.Field(
+        default_factory=FontWeight,
+        description=(
+            "Font weight. Provide a single integer (100-900) for all elements,"
+            " or a dict with keys 'body', 'name', 'headline', 'connections',"
+            " 'section_titles'. The default value is `400`."
         ),
     )
     alignment: Literal["left", "justified", "justified-with-no-hyphenation"] = (
@@ -300,6 +347,26 @@ class Typography(BaseModelWithoutExtraKeys):
             )
 
         return FontFamily.model_validate(font_family)
+
+    @pydantic.field_validator(
+        "font_weight", mode="plain", json_schema_input_type=FontWeight | int
+    )
+    @classmethod
+    def validate_font_weight(
+        cls, font_weight: FontWeight | int
+    ) -> FontWeight:
+        """Convert single int to FontWeight object with uniform styling."""
+        if isinstance(font_weight, int):
+            return FontWeight(
+                body=font_weight,
+                name=font_weight,
+                headline=font_weight,
+                connections=font_weight,
+                section_titles=font_weight,
+                entry_title=font_weight,
+                entry_detail=font_weight,
+            )
+        return FontWeight.model_validate(font_weight)
 
 
 class Links(BaseModelWithoutExtraKeys):
@@ -391,22 +458,22 @@ class Header(BaseModelWithoutExtraKeys):
         ),
     )
     space_below_name: TypstDimension = pydantic.Field(
-        default="0.7cm",
-        description="Space below your name. "
+        default="0.28cm",
+        description="Space below the name. "
         + length_common_description
-        + " The default value is `0.7cm`.",
+        + " The default value is `0.28cm`.",
     )
     space_below_headline: TypstDimension = pydantic.Field(
-        default="0.7cm",
+        default="0.28cm",
         description="Space below the headline. "
         + length_common_description
-        + " The default value is `0.7cm`.",
+        + " The default value is `0.28cm`.",
     )
     space_below_connections: TypstDimension = pydantic.Field(
-        default="0.7cm",
+        default="0.15cm",
         description="Space below contact information. "
         + length_common_description
-        + " The default value is `0.7cm`.",
+        + " The default value is `0.15cm`.",
     )
     connections: Connections = pydantic.Field(
         default_factory=Connections,
@@ -416,7 +483,7 @@ class Header(BaseModelWithoutExtraKeys):
 
 class SectionTitles(BaseModelWithoutExtraKeys):
     type: SectionTitleType = pydantic.Field(
-        default="without_line",
+        default="with_partial_line",
         description=(
             "Section title visual style. Use 'with_partial_line' for a line next to the"
             " title, 'with_full_line' for a line across the page, 'without_line' for no"
@@ -425,16 +492,16 @@ class SectionTitles(BaseModelWithoutExtraKeys):
         ),
     )
     line_thickness: TypstDimension = pydantic.Field(
-        default="0.5pt",
-        description=length_common_description + " The default value is `0.5pt`.",
+        default="0.4pt",
+        description=length_common_description + " The default value is `0.4pt`.",
     )
     space_above: TypstDimension = pydantic.Field(
-        default="0.2cm",
-        description=length_common_description + " The default value is `0.5cm`.",
+        default="0.35cm",
+        description=length_common_description + " The default value is `0.35cm`.",
     )
     space_below: TypstDimension = pydantic.Field(
-        default="0.2cm",
-        description=length_common_description + " The default value is `0.3cm`.",
+        default="0.18cm",
+        description=length_common_description + " The default value is `0.18cm`.",
     )
 
 
@@ -447,15 +514,15 @@ class Sections(BaseModelWithoutExtraKeys):
         ),
     )
     space_between_regular_entries: TypstDimension = pydantic.Field(
-        default="1.2em",
+        default="0.5em",
         description=(
             "Vertical space between entries. "
             + length_common_description
-            + " The default value is `1.2em`."
+            + " The default value is `0.5em`."
         ),
     )
     space_between_text_based_entries: TypstDimension = pydantic.Field(
-        default="0.3em",
+        default="0.45em",
         description=(
             "Vertical space between text-based entries. "
             + length_common_description
@@ -526,19 +593,19 @@ class Highlights(BaseModelWithoutExtraKeys):
         ),
     )
     space_above: TypstDimension = pydantic.Field(
-        default="0cm",
+        default="0.1cm",
         description=(
             "Space above highlights. "
             + length_common_description
-            + " The default value is `0cm`."
+            + " The default value is `0.1cm`."
         ),
     )
     space_between_items: TypstDimension = pydantic.Field(
-        default="0cm",
+        default="0.12cm",
         description=(
             "Space between highlight items. "
             + length_common_description
-            + " The default value is `0cm`."
+            + " The default value is `0.12cm`."
         ),
     )
     space_between_bullet_and_text: TypstDimension = pydantic.Field(
@@ -553,11 +620,11 @@ class Highlights(BaseModelWithoutExtraKeys):
 
 class Entries(BaseModelWithoutExtraKeys):
     date_and_location_width: TypstDimension = pydantic.Field(
-        default="4.15cm",
+        default="4.8cm",
         description=(
             "Width of the date/location column. "
             + length_common_description
-            + " The default value is `4.15cm`."
+            + " The default value is `4.8cm`."
         ),
     )
     side_space: TypstDimension = pydantic.Field(
@@ -584,10 +651,10 @@ class Entries(BaseModelWithoutExtraKeys):
         ),
     )
     short_second_row: bool = pydantic.Field(
-        default=True,
+        default=False,
         description=(
             "Shorten the second row to align with the date/location column. The default"
-            " value is `true`."
+            " value is `false`."
         ),
     )
     degree_width: TypstDimension = pydantic.Field(
@@ -623,7 +690,7 @@ class OneLineEntry(BaseModelWithoutExtraKeys):
 
 class EducationEntry(BaseModelWithoutExtraKeys):
     main_column: str = pydantic.Field(
-        default="**INSTITUTION**\n#custom-subtitle(\"AREA\")\nSUMMARY\nHIGHLIGHTS",
+        default="**INSTITUTION**\n#custom_subtitle[AREA]\nSUMMARY\nHIGHLIGHTS",
         description=(
             "Template for education entry main column. Available placeholders:\n-"
             " `INSTITUTION`: Institution name\n- `AREA`: Field of study/major\n-"
@@ -633,7 +700,7 @@ class EducationEntry(BaseModelWithoutExtraKeys):
             " `HIGHLIGHTS`: Bullet points list\n- `LOCATION`: Location text\n- `DATE`:"
             " Formatted date or date range\n\nYou can also add arbitrary keys to"
             " entries and use them as UPPERCASE placeholders.\n\nThe default value is"
-            " `**INSTITUTION**\\n#custom-subtitle(\"AREA\")\\nSUMMARY\\nHIGHLIGHTS`."
+            " `**INSTITUTION**\\n#custom_subtitle[AREA]\\nSUMMARY\\nHIGHLIGHTS`."
         ),
     )
     degree_column: str | None = pydantic.Field(
@@ -665,7 +732,7 @@ class EducationEntry(BaseModelWithoutExtraKeys):
 
 class NormalEntry(BaseModelWithoutExtraKeys):
     main_column: str = pydantic.Field(
-        default="**NAME**\nSUMMARY\nHIGHLIGHTS",
+        default="**NAME**\n#custom_subtitle[DETAIL]\nSUMMARY\nHIGHLIGHTS",
         description=(
             "Template for normal entry main column. Available placeholders:\n- `NAME`:"
             " Entry name/title\n- `SUMMARY`: Summary text\n- `HIGHLIGHTS`: Bullet"
@@ -689,14 +756,14 @@ class NormalEntry(BaseModelWithoutExtraKeys):
 
 class ExperienceEntry(BaseModelWithoutExtraKeys):
     main_column: str = pydantic.Field(
-        default="**COMPANY**\n#custom-subtitle(\"POSITION\")\nSUMMARY\nHIGHLIGHTS",
+        default="**COMPANY**\n#custom_subtitle[POSITION]\nSUMMARY\nHIGHLIGHTS",
         description=(
             "Template for experience entry main column. Available placeholders:\n-"
             " `COMPANY`: Company name\n- `POSITION`: Job title/position\n- `SUMMARY`:"
             " Summary text\n- `HIGHLIGHTS`: Bullet points list\n- `LOCATION`: Location"
             " text\n- `DATE`: Formatted date or date range\n\nYou can also add"
             " arbitrary keys to entries and use them as UPPERCASE placeholders.\n\nThe"
-            " default value is `**COMPANY**\\n#custom-subtitle(\"POSITION\")\\nSUMMARY\\nHIGHLIGHTS`."
+            " default value is `**COMPANY**\\n#custom_subtitle[POSITION]\\nSUMMARY\\nHIGHLIGHTS`."
         ),
     )
     date_and_location_column: str = pydantic.Field(
@@ -833,8 +900,8 @@ class Templates(BaseModelWithoutExtraKeys):
     )
 
 
-class EjemploTheme(BaseModelWithoutExtraKeys):
-    theme: Literal["ejemplo"] = "ejemplo"
+class JpmrTheme(BaseModelWithoutExtraKeys):
+    theme: Literal["jpmr"] = "jpmr"
     page: Page = pydantic.Field(default_factory=Page)
     colors: Colors = pydantic.Field(default_factory=Colors)
     typography: Typography = pydantic.Field(default_factory=Typography)

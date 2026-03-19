@@ -1,57 +1,94 @@
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║  Plantilla base de CV - Rellenar a mano o con IA.              ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
 cv:
   name: Martín Gil Oyarzún
-  headline: AI Solutions Architect | Desarrollador Full-Stack
-  phone: "+569 9417 2921"
-  email: martin.gil.o@gmail.com
+  headline: AI Solutions Architect | Full-Stack Developer
   location: Viña del Mar, Chile
+  phone: +56 9 9417 2921
+  email: martin.gil.o@gmail.com
   social_networks:
-    - network: LinkedIn
-      username: martin-gil-o
-    - network: GitHub
-      username: kirlts
+  - network: LinkedIn
+    username: martin-gil-o
+  - network: GitHub
+    username: kirlts
   sections:
-    # Las siguientes secciones serán rellenadas dinámicamente por la IA
-    # basándose en la Knowledge Base y los requerimientos de la oferta.
-    Experience: []
-    Education:
-      - institution: Universidad Andrés Bello
-        area: Ingeniería en Computación e Informática
-        location: Viña del Mar, Chile
-        date: 2023 - 2025
-        highlights:
-          - "Tesis de Grado: Validador QM (Plataforma de Aseguramiento de Calidad con IA)"
-      - institution: Universidad Diego Portales
-        area: Ingeniería Civil en Telecomunicaciones e Informática
-        location: Santiago, Chile
-        date: 2020 - 2022
-        highlights:
-          - "Status: Convalidado en UNAB"
-    Projects: []
-    Skills: []
+    Experiencia:
+    - company: Universidad Alberto Hurtado
+      position: Desarrollador Principal y Encargado de Plataforma
+      location: Viña del Mar, Chile (Remoto)
+      date: Mar. 2024 - Presente
+      highlights:
+      - Implementación de modernización de la plataforma web, migrando un entorno legado monolítico hacia una infraestructura de servicios en Docker, saldando deuda técnica e incorporando estrategia completa de testing.
+      - Desarrollo de un motor híbrido de búsqueda en tiempo real y resolución de identidades utilizando Redis en memoria y algoritmos con RapidFuzz.
+      - Implementación de endpoints API seguros para la ingesta asíncrona de +1000 eventos digitalizados del Teatro Municipal de Santiago, en colaboración continua con el equipo de OCR.
+    - company: Universidad Andrés Bello
+      position: Investigador y Desarrollador de IA
+      location: Viña del Mar, Chile (Híbrido)
+      date: Jul. 2024 - Ene. 2026
+      highlights:
+      - Orquestación de flujos en N8N, implementando pipelines con agentes LLM y RAG con pgvector para análisis semántico y auditoría de compliance.
+      - Diseño y publicación académica de una especificación formal basada en JSON-LD, habilitando el modelado matemático y la validación parcialmente determinista de 44 subestándares de rúbrica Quality Matters (Diseño Instruccional).
+      - Despliegue de plataforma en servidor institucional, frontend en Vue.js conectado a N8N y Supabase (postgres), en proceso de adopción temprana por unidad de Diseño Instruccional.
+    - company: Sotos
+      position: DevOps - Práctica Profesional
+      location: Viña del Mar, Chile (Híbrido)
+      date: Ene. 2024 - Mar. 2024
+      highlights:
+      - Ejecución técnica de la migración de infraestructura del proyecto pre-lanzamiento desde AWS a GCP.
+      - Orquestación de contenedores con Kubernetes y balanceadores de carga para el entorno de producción.
+
+    Proyectos Personales:
+    - name: "«Nombre del proyecto 1»"
+      detail: "«Descripción breve del proyecto»"
+      date: "«URL al repositorio o al sitio web, fecha si no aplica»"
+      highlights:
+      - "«Aspecto destacable 1, orientado a la oferta profesional»"
+      - "«Aspecto destacable 2, orientado a la oferta profesional»"
+      - "«Aspecto destacable 3, orientado a la oferta profesional»"
+    - name: "«Nombre del proyecto 2»"
+      detail: "«Descripción breve del proyecto»"
+      date: "«URL al repositorio o al sitio web, fecha si no aplica»"
+      highlights:
+      - "«Aspecto destacable 1, orientado a la oferta profesional»"
+      - "«Aspecto destacable 2, orientado a la oferta profesional»"
+      - "«Aspecto destacable 3, orientado a la oferta profesional»"
+
+
+    Habilidades:
+    - label: "«IA y Orquestación»"
+      details: "«Keywords técnicas extraídas de la Knowledge Base, aptas para sistemas ATS. Ej: N8N, CrewAI, LangChain, RAG, pgvector, Pydantic-AI, Google GenAI SDK»"
+    - label: "«Cloud y DevOps»"
+      details: "«Keywords técnicas»"
+    - label: "«Lenguajes y Datos»"
+      details: "«Keywords técnicas»"
+    - label: "«Desarrollo Full-Stack»"
+      details: "«Keywords técnicas»"
+    - label: Idiomas Hablados
+      details: "Español (Nativo), Inglés (Avanzado - C2)"
+
+    Educación:
+    - institution: Universidad Andrés Bello
+      area: Ingeniería en Computación e Informática
+      location: Viña del Mar, Chile
+      date: Mar. 2023 - Dic. 2025
+      summary: 'Tesis: "Validador QM", sistema de Aseguramiento de Calidad con IA para validación automatizada de estándares Quality Matters. Basado en especificación formal JSON-LD, orquestación de agentes LLM en con RAG sobre pgvector y plataforma web en Vue.js. Publicaciones académicas asociadas aceptadas en conferencias IFE 2026 y EDUNINE 2026.'
+    - institution: Universidad Diego Portales
+      area: Ingeniería Civil en Telecomunicaciones e Informática
+      location: Santiago, Chile
+      date: Mar. 2020 - Dic. 2022
+      summary: Convalidado en UNAB.
+
+locale:
+  language: spanish
+
 design:
-  theme: ejemplo
-  page:
-    top_margin: 0.6in
-    bottom_margin: 0.6in
-    left_margin: 0.6in
-    right_margin: 0.6in
-  header:
-    space_below_name: 0.3cm
-    space_below_headline: 0.2cm
-    space_below_connections: 0.3cm
-    connections:
-      phone_number_format: international
-  section_titles:
-    space_above: 0.3cm
-    space_below: 0.15cm
-  sections:
-    space_between_regular_entries: 0.6em
-    space_between_text_based_entries: 0.15em
-  entries:
-    short_second_row: false
-  typography:
-    font_size:
-      body: 9pt
-      name: 30pt
-      section_titles: 1.3em
-    line_spacing: 0.55em
+  theme: jpmr
+settings:
+  render_command:
+    output_folder: "../CVs/«Cargo - empresa (ej: AI Specialist - ACL)»/"
+    pdf_path: OUTPUT_FOLDER/Martin_Gil_CV_Español.pdf
+    dont_generate_html: true
+    dont_generate_markdown: true
+    dont_generate_png: true

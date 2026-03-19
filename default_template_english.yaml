@@ -1,0 +1,94 @@
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║  Default CV template — Fill manually or with AI.               ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
+cv:
+  name: Martin Gil Oyarzun
+  headline: AI Solutions Architect | Full-Stack Developer
+  location: Viña del Mar, Chile
+  phone: +56 9 9417 2921
+  email: martin.gil.o@gmail.com
+  social_networks:
+  - network: LinkedIn
+    username: martin-gil-o
+  - network: GitHub
+    username: kirlts
+  sections:
+    Experience:
+    - company: Universidad Alberto Hurtado
+      position: Lead Developer and Platform Manager
+      location: Viña del Mar, Chile (Remote)
+      date: Mar. 2024 - Present
+      highlights:
+      - Implemented platform modernization, migrating a legacy monolith to a Docker-based service infrastructure, resolving technical debt and incorporating a comprehensive testing strategy.
+      - Developed a hybrid real-time search engine and identity resolution system using in-memory Redis and RapidFuzz algorithms.
+      - Implemented secure API endpoints for asynchronous ingestion of 1000+ digitized events from Teatro Municipal de Santiago, in ongoing collaboration with the OCR team.
+    - company: Universidad Andrés Bello
+      position: AI Researcher and Developer
+      location: Viña del Mar, Chile (Hybrid)
+      date: Jul. 2024 - Jan. 2026
+      highlights:
+      - Orchestrated N8N workflows, implementing LLM agent pipelines and RAG with pgvector for semantic analysis and compliance auditing.
+      - Designed and academically published a formal specification based on JSON-LD, enabling mathematical modeling and partially deterministic validation of 44 Quality Matters rubric sub-standards.
+      - Deployed institutional platform with Vue.js frontend connected to N8N and Supabase (postgres), currently in early adoption stage by the institutions' Instructional Design unit.
+    - company: Sotos
+      position: DevOps Engineer - Internship
+      location: Viña del Mar, Chile (Hybrid)
+      date: Jan. 2024 - Mar. 2024
+      highlights:
+      - Executed full infrastructure migration of the pre-launch project from AWS to GCP.
+      - Orchestrated container deployments with Kubernetes and load balancers for the production environment.
+
+    Personal Projects:
+    - name: "«Project name 1»"
+      detail: "«Brief project description»"
+      date: "«URL to repository or website, date if N/A»"
+      highlights:
+      - "«Key achievement 1, aligned with the job posting»"
+      - "«Key achievement 2, aligned with the job posting»"
+      - "«Key achievement 3, aligned with the job posting»"
+    - name: "«Project name 2»"
+      detail: "«Brief project description»"
+      date: "«URL to repository or website, date if N/A»"
+      highlights:
+      - "«Key achievement 1, aligned with the job posting»"
+      - "«Key achievement 2, aligned with the job posting»"
+      - "«Key achievement 3, aligned with the job posting»"
+
+
+    Skills:
+    - label: "«AI & Orchestration»"
+      details: "«Technical keywords extracted from the Knowledge Base, apt for ATS systems. e.g.: N8N, CrewAI, LangChain, RAG, pgvector, Pydantic-AI, Google GenAI SDK»"
+    - label: "«Cloud & DevOps»"
+      details: "«Technical keywords»"
+    - label: "Languages & Data»"
+      details: "«Technical keywords»"
+    - label: "«Full-Stack Development»"
+      details: "«Technical keywords»"
+    - label: Spoken Languages
+      details: "Spanish (Native), English (Advanced - C2)"
+
+    Education:
+    - institution: Universidad Andrés Bello
+      area: Computer and Information Engineering
+      location: Viña del Mar, Chile
+      date: Mar. 2023 - Dec. 2025
+      summary: 'Thesis: "QM Validator", AI-powered Quality Assurance system for automated validation of Quality Matters standards. Built on a formal JSON-LD specification, LLM agent orchestration with RAG over pgvector, and a Vue.js web platform. Associated academic publications accepted at IFE 2026 and EDUNINE 2026 conferences.'
+    - institution: Universidad Diego Portales
+      area: Civil Engineering in Telecommunications and IT
+      location: Santiago, Chile
+      date: Mar. 2020 - Dec. 2022
+      summary: Credits transferred to UNAB.
+
+locale:
+  language: english
+
+design:
+  theme: jpmr
+settings:
+  render_command:
+    output_folder: "../CVs/«Position - Company (e.g.: AI Specialist - ACL)»/"
+    pdf_path: OUTPUT_FOLDER/Martin_Gil_CV_English.pdf
+    dont_generate_html: true
+    dont_generate_markdown: true
+    dont_generate_png: true
